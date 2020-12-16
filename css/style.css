@@ -142,7 +142,7 @@ li.dropdown {
 }
 
 .home {
-    padding-top: 100px;
+    padding: 20px;
 }
 
 header img {
@@ -180,6 +180,11 @@ header img {
 .home-top img {
     width: 100%;
     max-height: 265px;
+    overflow: hidden;
+}
+
+.top-left, .top-right {
+    max-height: 255px;
     overflow: hidden;
 }
 
@@ -238,11 +243,12 @@ header img {
 .course-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .course {
-    flex: 0 20%;
-    margin: 20px;
+    flex: 0 22%;
+    margin: 10px;
     transition: .2s;
 }
 
@@ -295,4 +301,35 @@ header img {
 
 .course-star img {
     width: 20px;
+}
+
+.home-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.home-banner-conntent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.banner-item {
+    flex: 0 33%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.banner-item-img {
+    text-align: center;
+}
+
+.banner-item-text {
+    margin-top: 10px;
+    text-align: center;
 }
