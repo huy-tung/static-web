@@ -21,7 +21,7 @@ header {
     height: 80px;
     position: fixed;
     width: 100%;
-    
+    z-index: 999;
 }
 
 .container {
@@ -233,4 +233,66 @@ header img {
     width: 50px;
     background-color: #87ceaf;
     margin-right: 10px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    flex: 0 20%;
+    margin: 20px;
+    transition: .2s;
+}
+
+.course:hover {
+    transform: scale(1.005);
+    box-shadow: 5px 5px 20px gray;
+}
+
+.course-img {
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.course-img img {
+    width: 100%;
+}
+
+.course-des {
+    background-color: white;
+    padding: 15px;
+}
+
+.course-des h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.course-price {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-price p {
+    font-weight: bold;
+    color: tomato;
+}
+
+.course-star {
+    display: flex;
+    width: 50%;
+}
+
+.course-star img {
+    width: 20px;
 }
