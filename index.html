@@ -12,10 +12,16 @@
 
 <body>
     <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
+        <div class="container header">
+            <img src="img/logo.svg" alt="">
+            <input type="text" placeholder="Tìm kiếm khoá học" class="search">
+            <div class="group-btn">
+                <button class="active-course">Kích hoạt khoá học</button>
+                <button class="btn-buy"><img src="img/buy.png" alt=""></button>
+            </div>
+        </div>
     </header>
-    <nav>
+    <!-- <nav>
         <ul>
             <li><a data-section="home">Home</a></li>
             <li><a data-section="services">Services</a></li>
@@ -29,9 +35,54 @@
             </li>
             <li style="float:right"><a data-section="about">About us</a></li>
         </ul>
-    </nav>
+    </nav> -->
+    <section class="container">
+        <div class="home">
+            <h1 class="home-header">CHINH PHỤC MỤC TIÊU CỦA BẠN</h1>
+            <div class="home-top">
+                <div class="top-left">
+                    <img src="img/dau-tu-tien-nhan-roi-feature.jpg" alt="">
+                    <div class="top-content">
+                        <img src="img/slide.png" alt="">
+                        <p>Đầu tư chứng khoán chuyên nghiệp</p>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <img src="img/nha-dau-tu-ck-1606382476.jpg" alt="">
+                    <div class="top-content">
+                        <img src="img/slide.png" alt="">
+                        <p>Khoá học marketing online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-bottom">
+                <div class="home-bottom-item">
+                    <img src="img/Early-childhood-teachers.jpg" alt="">
+                    <div class="top-content">
+                        <img src="img/slide.png" alt="">
+                        <p>Nuôi dạy con cái</p>
+                    </div>
+                </div>
+                <div class="home-bottom-item">
+                    <img src="img/unnamed.jpg" alt="">
+                    <div class="top-content">
+                        <img src="img/slide.png" alt="">
+                        <p>Làm chủ công nghệ</p>
+                    </div>
+                </div>
+                <div class="home-bottom-item">
+                    <img src="img/11-du-lich_erit.jpg" alt="">
+                    <div class="top-content">
+                        <img src="img/slide.png" alt="">
+                        <p>Nâng cao sức khoẻ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>ABC</h1>
+    </section>
 
-    <section id="home" class="hideable-section">
+    <!-- <section id="home" class="hideable-section">
         <div>Home content</div>
     </section>
 
@@ -53,7 +104,7 @@
 
     <section id="link3" class="hideable-section">
         <div>Link3 content</div>
-    </section>
+    </section> -->
 
     <script>
         $(function() {
